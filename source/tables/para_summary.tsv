@@ -23,8 +23,8 @@ Category	Sub-category	Description
 	max_jobs	set the maximum number of jobs to throw out, default 30 (for qsub-sge)
 	queue	specify the queue to use, default all availabile queues
 :ref:`Daligner1`		set up parameters for Daligner1
-	blocksize1	set block size of -s * 1Mbp (default: 200MBs) for the first daligner
+	blocksize1	set block size of -s * 1Mbp (default: 400MBs, 400) for the first daligner
 	runid1	run identifier (default: 1). That means all overlap files of Block X a written to a subdirectory: dRUN-IDENTIFIER_X
 :ref:`Daligner2`		set up parameters for Daligner2
-	blocksize2	set block size of -s * 1Mbp (default: 200MBs) for the second daligner
+	blocksize2	set block size of -s * 1Mbp (default: 400MBs, 400) for the second daligner
 	runid2	run identifier (default: 1). That means all overlap files of Block X a written to a subdirectory: dRUN-IDENTIFIER_X
