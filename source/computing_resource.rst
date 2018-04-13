@@ -4,7 +4,7 @@ Computing Resource
 Daligner
 --------------------------------------------------------------------------------
 
-We suggest 30 G memory(daligner_mem) and 8 cpu(daligner_nproc) for each daligner tasks.
+We suggest 16 G memory(daligner_mem) and 8 cpu(daligner_nproc) for each daligner tasks.
 
 Small tasks
 --------------------------------------------------------------------------------

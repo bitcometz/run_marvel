@@ -9,7 +9,7 @@ Prepare Config file
 --------------------------------------------------------------------------------
 
 
-First, you have to prepare a \'config\.cfg\', which contains the informations survey requires to fish all the tasks. You can just copy the \'config\.cfg\' from the survey folder and alter the necessary items just as following:
+First, you have to prepare a \'config\.cfg\', which contains the informations run_marvel requires to fish all the tasks. You can just copy the \'config\.cfg\' from the run_marvel folder and alter the necessary items just as following:
 
 .. image:: images/config.png
 
