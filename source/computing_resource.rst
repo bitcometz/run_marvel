@@ -1,23 +1,30 @@
 Computing Resource
 ================================================================================
 
-Survey
+Daligner
 --------------------------------------------------------------------------------
 
-We suggest 50 Gb memory and 25 cpu for a 850M genome. It will take roughly 20min.
+We suggest 30 G memory(daligner_mem) and 8 cpu(daligner_nproc) for each daligner tasks.
 
-Assembly
+Small tasks
 --------------------------------------------------------------------------------
 
-The size of memory depends on the genome sizes. Usually the memory size of the SOAPdenovo program is about 100
-times the estimated genome sizes.
+For small tasks, which requires small memory, such as **LAq**, **LAstitch**, **LArepeat**, **LAgap**, **LAfilter**,
+we suggest 2 G memory(small_mem) and 2 cpu(small_nproc) for each this kind of tasks.
+
+
+Small tasks
+--------------------------------------------------------------------------------
+
+For big tasks, which requires huge memory, such as **TKmerge**, **OGbuild, **OGtour**, **tour2fasta**,
+we suggest 60 G memory(small_mem) and 2 cpu(small_nproc) for each this kind of tasks.
 
 You can easily change these settings in the config.cfg file.
 
 Storage
 --------------------------------------------------------------------------------
 
-For a genome ~850Mb size with 50x illumina shore reads, the storage for each folder is:
+For a genome ~4.6Mb size with 50x PacBio reads, the storage for each folder is:
 
 .. csv-table::
    :file: tables/storage.tsv
@@ -25,5 +32,5 @@ For a genome ~850Mb size with 50x illumina shore reads, the storage for each fol
    :header-rows: 1
    :widths: 15, 10, 75
 
-To save you storage, you can nohup the shell 'delete_survey.sh' after you finished running survey.
+To save you storage, you can nohup the shell 'delete_marvel.sh' after you finished running survey.
 

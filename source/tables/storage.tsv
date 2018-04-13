@@ -1,5 +1,5 @@
 Folder	Storage	Description
-01Survey	11G	Store results for kmer analysis
-02Assemble	64G	Store results for assembly, including contigs and scaffolds
-03Coverage_contig	257M	Store the coverage and GC distributions results
-nanjimaobei.Survey.report	3.4M	Store reports for QC, kmer analysis and assembly
+1-dalignerOne	378M	Store results for the first dalinger
+2-dalignerTwo	473M	Store results for the second dalinger
+3-results	4.6M	Store the links of patched reads and contig files
+4-longs	8.5K	Store the log and err information for the shell nohup_run.sh

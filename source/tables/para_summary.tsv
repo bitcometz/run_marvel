@@ -1,17 +1,30 @@
 Category	Sub-category	Description
 :ref:`Data`		set up names or dir for files
-	project_name	the project name
-	file_list	abs path for the file reads.list containg path for reads set
-	output_path	dir where you want to ouput all the results
-	QC_path	the path for the QC results where you can get clean data
-	QC_list	the file under QC paht, each row contaning library name and inser sizes(for example: lib_name(\\t)insert_size)
-:ref:`Cluster`		set up parameters for running jobs
-	survey_threads	cpu number set for survey
-	survey_vf	memory set for survey
-	assemble_threads	cpu number set for assembly
-	assemble_vf	memory set for assembly
-	qopts	parameters set for sge, for example -P
-:ref:`Program`		set up parameters for programs
-	max_read_length	the length of reads
-	assembly_kmer	the k-mer size for assembly, default:41
-
+	db_name	the project name and never use the name 'work'!!!
+	reads_list	abs path for the file reads.list containg path for reads set
+	output_dir	dir where you want to ouput all the results
+	reads_len_min	minimal length of reads
+:ref:`Global`		set up parameters for running jobs
+	DEF_DALIGNER_T_MIN	suppresses the use of any k-mer that occurs more than t times
+	DEF_DALIGNER_K	kmer length
+	DEF_DALIGNER_E	average correlation rate (default: 0.5). Must be in [.5,1.)
+	genome	memory size
+:ref:`Qsub`		set up parameters for qsub-sge
+	daligner_mem	memory for dalinger tasks
+	daligner_nproc	cpu number for daligner tasks, Must be a power of 2
+	small_mem	memory for small tasks, for example, LAq, LAstitch, suggest 2G
+	small_nproc	cpu number for small tasks, suggest 2
+	big_mem	memory for big tasks, for example, TKmerge, OGbuild, suggest 60G
+	big_nproc	cpu number for big tasks, suggest 2
+	kmert	daligner.kmer_threshold
+	numBlocks	daligner.numBlocks
+	jobOrder	change daligner job order into: db.1, db.1 .. db.n; db.2, db.2 .. db.n; ..., (default: diagonal bands)
+	lines	set number of lines to form a job, default 1 (for qsub-sge)
+	max_jobs	set the maximum number of jobs to throw out, default 30 (for qsub-sge)
+	queue	specify the queue to use, default all availabile queues
+:ref:`Daligner1`		set up parameters for Daligner1
+	blocksize1	set block size of -s * 1Mbp (default: 200MBs) for the first daligner
+	runid1	run identifier (default: 1). That means all overlap files of Block X a written to a subdirectory: dRUN-IDENTIFIER_X
+:ref:`Daligner2`		set up parameters for Daligner2
+	blocksize2	set block size of -s * 1Mbp (default: 200MBs) for the second daligner
+	runid2	run identifier (default: 1). That means all overlap files of Block X a written to a subdirectory: dRUN-IDENTIFIER_X

@@ -7,6 +7,6 @@ run_marvel - a highly automated pipeline for MARVEL
 **run_marvel**, is a wrapper script written in Python, which controls all the execution of scripts of MARVEL. With it, you just have to to prepare a config file and perform a simple command operation. Besides, it help you organize the relevant file directories to make all the temporary files and results look neat and orderly so that you can easily get what you want. 
 
 
-**(对于中文读者)** You can also download the `Chinese document for MARVEL <https://github.com/bitcometz/survey/raw/master/source/Survey_V1.3.pdf>`__
+**(对于中文读者)** You can also download the `Chinese document for MARVEL <https://github.com/bitcometz/run_marvel/raw/master/marvel_chinese.pdf>`__
 
 
