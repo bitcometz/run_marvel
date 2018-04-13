@@ -45,7 +45,7 @@ For more details, you can refer to the MARVEL paper, we supply the links for it 
 Input and Output
 --------------------------------------------------------------------------------
 
-To run survey package, you have to prepare two files. The first one is 'config.list' file where each line stores the path for the reads files independently. Besides, you have to prepare a 'config.cfg' file, containing sample name, reads.list, output dir and all kinds of parameters.
+For the run_marvel package, you have to prepare two files. The first one is 'config.list' file where each line stores the path for the reads files independently. Besides, you have to prepare a 'config.cfg' file, containing sample name, reads.list, output dir and all kinds of parameters.
 
 For more information, you can refer to the part 'Config and Usage' under the section  *Examples* .
 

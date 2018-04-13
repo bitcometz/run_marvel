@@ -32,5 +32,5 @@ For a genome ~4.6Mb size with 50x PacBio reads, the storage for each folder is:
    :header-rows: 1
    :widths: 15, 10, 75
 
-To save you storage, you can nohup the shell 'delete_marvel.sh' after you finished running survey.
+To save you storage, you can nohup the shell 'delete_marvel.sh' after you finished running run_marvel.
 
