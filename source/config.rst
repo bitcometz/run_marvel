@@ -39,7 +39,7 @@ Usage
 
 It is very easy to use run_marvel, just as the following commands:
 
-   > /NJPROJ1/RAD/software/anaconda3/bin//python3.6 /NJPROJ1/RAD/users/zhangjinbo/00.bins/marvels/scripts/run_marvel.py **config.cfg**
+   > python3.6  run_marvel.py  **config.cfg**
 
 Here comes a tested example:
 
