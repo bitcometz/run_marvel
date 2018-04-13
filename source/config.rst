@@ -39,7 +39,7 @@ Usage
 
 It is very easy to use run_marvel, just as the following commands:
 
-   > python3.6  run_marvel.py  **config.cfg**
+   > /NJPROJ1/RAD/software/anaconda3/bin//python3.6 /NJPROJ1/RAD/users/zhangjinbo/00.bins/marvels/scripts/run_marvel.py **config.cfg**
 
 Here comes a tested example:
 
@@ -48,5 +48,12 @@ Here comes a tested example:
    > /ALBNAS01/02.WORK/macaixia/00.marvel/02.test
 
 After this, it will generate all the dirs and shells and qsub all the shells for you.
+
+And it will also output the next action for you (just copy, paste, and enter), for example:
+
+
+Please paste the following command line and Enter:
+
+nohup sh /ALBNAS01/02.WORK/macaixia/00.marvel/02.test/nohup_run.sh >/ALBNAS01/02.WORK/macaixia/00.marvel/02.test/4-logs/nohup_run.sh.log 2>/ALBNAS01/02.WORK/macaixia/00.marvel/02.test/4-logs/nohup_run.sh.err &
 
 
