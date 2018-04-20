@@ -13,7 +13,7 @@ For small tasks, which requires small memory, such as **LAq**, **LAstitch**, **L
 we suggest 2 G memory(small_mem) and 2 cpu(small_nproc) for each this kind of tasks.
 
 
-Small tasks
+Big tasks
 --------------------------------------------------------------------------------
 
 For big tasks, which requires huge memory, such as **TKmerge**, **OGbuild, **OGtour**, **tour2fasta**,
